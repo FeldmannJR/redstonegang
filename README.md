@@ -1,6 +1,6 @@
 # RedstoneGang
 
-RedstoneGang was a minecraft server built by [Feldmann](feldmann.dev) and [net32](isaias.dev), starting development around august of 2018, and finishing in the project october of 2019.   
+RedstoneGang was a minecraft server built by [Feldmann](https://feldmann.dev) and [net32](https://isaias.dev), starting development around august of 2018, and finishing in the project october of 2019.   
 Due to various problems the server was never officially opened.  
 
 # Components
