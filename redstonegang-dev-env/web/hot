@@ -1,0 +1,10 @@
+#!/bin/bash
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+docker run --rm -it \
+    -u node \
+    -v ${SCRIPTPATH}/sites:/sites \
+    -w /sites/app \
+    --network host \
+    node:10 \
+    npm run hot

@@ -1,0 +1,6 @@
+web/sites/
+.env
+.idea/
+java/data/
+java/jars/*
+!java/jars/.gitkeep

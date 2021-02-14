@@ -1,0 +1,16 @@
+FROM redstonegang-spigot
+
+ENV PLUGIN_WORLD_EDIT=true
+ENV PLUGIN_WORLD_GUARD=true
+ENV PLUGIN_HOLOGRAPHIC_DISPLAYS=true
+
+ENV SPIGOT_GAME_NAME=SURVIVAL_TERRENOS
+
+ENV PROPERTIES_LEVEL_NAME=survival
+ENV PROPERTIES_LEVEL_SEED=8431461915726085993
+ENV PROPERTIES_DIFFICULTY=2
+
+COPY default-plugins /server/plugins/
+
+RUN mkdir /server/worlds/survival/
+ADD world/ /server/worlds/survival/

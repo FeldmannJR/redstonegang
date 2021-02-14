@@ -1,0 +1,601 @@
+{
+    "enabled": true,
+    "rarity": 1,
+    "biomeType": "DESERT",
+    "useDungeons": true,
+    "dungeonChance": 8,
+    "useMineShafts": true,
+    "useStrongholds": true,
+    "useVillages": true,
+    "useTemples": false,
+    "useNetherFortress": false,
+    "useCaves": true,
+    "useMonuments": false,
+    "useWoodlandMansion": false,
+    "useRavines": true,
+    "useWitchHuts": false,
+    "usePyramids": false,
+    "useJungleTemples": false,
+    "useIgloos": false,
+    "useFossils": false,
+    "useWaterLakes": true,
+    "useLavaLakes": true,
+    "useRivers": false,
+    "useNativePainting": false,
+    "useNativeStructure": false,
+    "biomeColor": "#ae7c6b",
+    "fossilChance": 64,
+    "lavaLakeChance": 60,
+    "waterLakeChance": 4,
+    "ores": [
+        {
+            "type": "DIRT",
+            "data": 0,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 256
+        },
+        {
+            "type": "GRAVEL",
+            "data": 0,
+            "size": 33,
+            "count": 8,
+            "minHeight": 0,
+            "maxHeight": 256
+        },
+        {
+            "type": "STONE",
+            "data": 1,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        },
+        {
+            "type": "STONE",
+            "data": 3,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        },
+        {
+            "type": "STONE",
+            "data": 5,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        }
+    ],
+    "terrainSettings": {
+        "subTerrains": [
+            {
+                "provider": "EWG",
+                "name": "Mesa",
+                "xModifier": 1,
+                "yModifer": 1,
+                "zModifer": 1,
+                "yOffset": 0
+            }
+        ]
+    },
+    "overlaySettings": {
+        "spawnLillypads": false,
+        "spawnCactus": true,
+        "spawnSnowLayers": false,
+        "spawnIceOnWater": false,
+        "minRiver": 2,
+        "groundDepth": 3,
+        "surfaceDepth": 40,
+        "surfaceBlocks": [
+            [
+                [
+                    {
+                        "type": "SAND",
+                        "data": 1,
+                        "heightConditions": [
+                            {
+                                "minHeight": 80,
+                                "maxHeight": 256
+                            }
+                        ],
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 0.5
+                            }
+                        ]
+                    },
+                    0.6
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 6,
+                        "heightConditions": [
+                            {
+                                "minHeight": 80,
+                                "maxHeight": 81
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 7,
+                        "heightConditions": [
+                            {
+                                "minHeight": 84,
+                                "maxHeight": 85
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 8,
+                        "heightConditions": [
+                            {
+                                "minHeight": 88,
+                                "maxHeight": 89
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 9,
+                        "heightConditions": [
+                            {
+                                "minHeight": 92,
+                                "maxHeight": 57
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 10,
+                        "heightConditions": [
+                            {
+                                "minHeight": 96,
+                                "maxHeight": 97
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 1,
+                        "heightConditions": [
+                            {
+                                "minHeight": 100,
+                                "maxHeight": 101
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 15,
+                        "heightConditions": [
+                            {
+                                "minHeight": 108,
+                                "maxHeight": 109
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 4,
+                        "heightConditions": [
+                            {
+                                "minHeight": 112,
+                                "maxHeight": 113
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 8,
+                        "heightConditions": [
+                            {
+                                "minHeight": 118,
+                                "maxHeight": 119
+                            }
+                        ],
+                        "probabilityType": "INDEPENDENT"
+                    },
+                    0.8
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "HARD_CLAY",
+                        "data": 0,
+                        "heightConditions": [
+                            {
+                                "minHeight": 0,
+                                "maxHeight": 80,
+                                "domaininationLevelMap": {
+                                    "0.0": 1,
+                                    "65.0": 0.8,
+                                    "70.0": 0.5,
+                                    "75.0": 0.25,
+                                    "80.0": 0.05
+                                }
+                            }
+                        ]
+                    },
+                    1
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 1,
+                        "heightConditions": [
+                            {
+                                "minHeight": 40,
+                                "maxHeight": 256
+                            }
+                        ]
+                    },
+                    0.7
+                ],
+                [
+                    {
+                        "type": "HARD_CLAY",
+                        "data": 0,
+                        "heightConditions": [
+                            {
+                                "minHeight": 40,
+                                "maxHeight": 256
+                            }
+                        ]
+                    },
+                    0.3
+                ]
+            ],
+            {},
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 1
+                    },
+                    1
+                ]
+            ]
+        ],
+        "oceanBlocks": [],
+        "groundBlocks": [
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "SANDSTONE",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "beachBlocks": [
+            [
+                [
+                    {
+                        "type": "DIRT",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "slabBlocks": [
+            [
+                [
+                    {
+                        "type": "STONE_SLAB2",
+                        "data": 1,
+                        "heightConditions": [
+                            {
+                                "minHeight": 90,
+                                "maxHeight": 256
+                            }
+                        ]
+                    },
+                    1
+                ]
+            ]
+        ],
+        "stairBlocks": [
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "RED_SANDSTONE_STAIRS",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "plantBlocks": [],
+        "riverBlocks": []
+    },
+    "customTrees": [
+        {
+            "name": "TREES_dead_normal_2",
+            "density": 6.666666666666667e-5,
+            "size": "MEDIUM",
+            "provider": "EWG",
+            "type": "TREES",
+            "blocksRequiredUnderneath": [
+                "SAND",
+                "STAINED_CLAY",
+                "STEP"
+            ],
+            "blacklistedDecoBlocks": [],
+            "spawnOnGround": true,
+            "overrideExsistingBlocks": false,
+            "allowRotation": true,
+            "applyPhysics": false,
+            "applyAir": false,
+            "fixFlyingRoots": true,
+            "replaceAir": true,
+            "minY": 50,
+            "maxY": 86,
+            "maxSlope": 0.7,
+            "minSlope": 0,
+            "transitionClearance": -1,
+            "snapToXGrid": -1,
+            "snapToYGrid": -1,
+            "gridXOffset": 0,
+            "gridYOffset": 0,
+            "anchorYOffset": 0
+        },
+        {
+            "name": "TREES_dead_medium_2",
+            "density": 6.666666666666667e-5,
+            "size": "MEDIUM",
+            "provider": "EWG",
+            "type": "TREES",
+            "blocksRequiredUnderneath": [
+                "SAND",
+                "STAINED_CLAY",
+                "STEP"
+            ],
+            "blacklistedDecoBlocks": [],
+            "spawnOnGround": true,
+            "overrideExsistingBlocks": false,
+            "allowRotation": true,
+            "applyPhysics": false,
+            "applyAir": false,
+            "fixFlyingRoots": true,
+            "replaceAir": true,
+            "minY": 50,
+            "maxY": 86,
+            "maxSlope": 0.7,
+            "minSlope": 0,
+            "transitionClearance": -1,
+            "snapToXGrid": -1,
+            "snapToYGrid": -1,
+            "gridXOffset": 0,
+            "gridYOffset": 0,
+            "anchorYOffset": 0
+        },
+        {
+            "name": "TREES_dead_huge",
+            "density": 6.666666666666667e-5,
+            "size": "MEDIUM",
+            "provider": "EWG",
+            "type": "TREES",
+            "blocksRequiredUnderneath": [
+                "SAND",
+                "STAINED_CLAY",
+                "STEP"
+            ],
+            "blacklistedDecoBlocks": [],
+            "spawnOnGround": true,
+            "overrideExsistingBlocks": false,
+            "allowRotation": true,
+            "applyPhysics": false,
+            "applyAir": false,
+            "fixFlyingRoots": true,
+            "replaceAir": true,
+            "minY": 50,
+            "maxY": 86,
+            "maxSlope": 0.7,
+            "minSlope": 0,
+            "transitionClearance": -1,
+            "snapToXGrid": -1,
+            "snapToYGrid": -1,
+            "gridXOffset": 0,
+            "gridYOffset": 0,
+            "anchorYOffset": 0
+        },
+        {
+            "name": "TREES_dead_big",
+            "density": 6.666666666666667e-5,
+            "size": "MEDIUM",
+            "provider": "EWG",
+            "type": "TREES",
+            "blocksRequiredUnderneath": [
+                "SAND",
+                "STAINED_CLAY",
+                "STEP"
+            ],
+            "blacklistedDecoBlocks": [],
+            "spawnOnGround": true,
+            "overrideExsistingBlocks": false,
+            "allowRotation": true,
+            "applyPhysics": false,
+            "applyAir": false,
+            "fixFlyingRoots": true,
+            "replaceAir": true,
+            "minY": 50,
+            "maxY": 86,
+            "maxSlope": 0.7,
+            "minSlope": 0,
+            "transitionClearance": -1,
+            "snapToXGrid": -1,
+            "snapToYGrid": -1,
+            "gridXOffset": 0,
+            "gridYOffset": 0,
+            "anchorYOffset": 0
+        },
+        {
+            "name": "TREES_dead_medium",
+            "density": 6.666666666666667e-5,
+            "size": "MEDIUM",
+            "provider": "EWG",
+            "type": "TREES",
+            "blocksRequiredUnderneath": [
+                "SAND",
+                "STAINED_CLAY",
+                "STEP"
+            ],
+            "blacklistedDecoBlocks": [],
+            "spawnOnGround": true,
+            "overrideExsistingBlocks": false,
+            "allowRotation": true,
+            "applyPhysics": false,
+            "applyAir": false,
+            "fixFlyingRoots": true,
+            "replaceAir": true,
+            "minY": 50,
+            "maxY": 86,
+            "maxSlope": 0.7,
+            "minSlope": 0,
+            "transitionClearance": -1,
+            "snapToXGrid": -1,
+            "snapToYGrid": -1,
+            "gridXOffset": 0,
+            "gridYOffset": 0,
+            "anchorYOffset": 0
+        },
+        {
+            "name": "TREES_dead_normal",
+            "density": 6.666666666666667e-5,
+            "size": "MEDIUM",
+            "provider": "EWG",
+            "type": "TREES",
+            "blocksRequiredUnderneath": [
+                "SAND",
+                "STAINED_CLAY",
+                "STEP"
+            ],
+            "blacklistedDecoBlocks": [],
+            "spawnOnGround": true,
+            "overrideExsistingBlocks": false,
+            "allowRotation": true,
+            "applyPhysics": false,
+            "applyAir": false,
+            "fixFlyingRoots": true,
+            "replaceAir": true,
+            "minY": 50,
+            "maxY": 86,
+            "maxSlope": 0.7,
+            "minSlope": 0,
+            "transitionClearance": -1,
+            "snapToXGrid": -1,
+            "snapToYGrid": -1,
+            "gridXOffset": 0,
+            "gridYOffset": 0,
+            "anchorYOffset": 0
+        }
+    ],
+    "customStructures": [],
+    "maxEWGObjectsPerChunk": 4,
+    "xNoiseModifier": 1.2,
+    "yNoiseModifier": 0.7,
+    "zNoiseModifier": 1.2,
+    "lakeDepth": 0,
+    "baseHeight": 67,
+    "nativeBiomes": [
+        {
+            "nativeBiome": "MESA",
+            "chance": 1
+        }
+    ],
+    "entitySettings": {},
+    "groundBlockSettings": {
+        "layers": [
+            {
+                "maxAmplitude": 10,
+                "minAmplitude": 5,
+                "xScale": 30,
+                "zScale": 30,
+                "minWidth": 4,
+                "maxWidth": 5,
+                "groundMaterials": [
+                    {
+                        "material": "DIRT",
+                        "data": 0,
+                        "chance": 1
+                    }
+                ]
+            },
+            {
+                "maxAmplitude": 10,
+                "minAmplitude": 5,
+                "xScale": 30,
+                "zScale": 30,
+                "minWidth": 13,
+                "maxWidth": 14,
+                "groundMaterials": [
+                    {
+                        "material": "COBBLESTONE",
+                        "data": 0,
+                        "chance": 1
+                    }
+                ]
+            }
+        ],
+        "repeat": true
+    },
+    "groundMaterials": []
+}

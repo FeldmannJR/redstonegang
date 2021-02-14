@@ -1,0 +1,6 @@
+name: Wire
+main: dev.feldmann.redstonegang.wire.Wire
+version: 0.1
+author: Feldmann
+depend: [Citizens]
+softdepend: [WorldGuard]

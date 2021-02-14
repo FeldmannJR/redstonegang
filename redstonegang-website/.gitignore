@@ -1,0 +1,23 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+.idea/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+
+# View
+/public/js
+/public/css
+/public/fonts
+/public/mix-manifest.json
+
+# Packages
+_ide_helper.php

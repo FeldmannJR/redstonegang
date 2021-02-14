@@ -1,0 +1,18 @@
+#!/bin/bash
+TMUX_SESSION=server
+
+console_command() {
+    COMMAND=$@
+    if [ "$TERM" == "dumb" ]; then
+        >&2 echo "Console command not supported on a dumb term."
+        exit 1
+    else
+        echo "Executing console command: ${COMMAND[@]}"
+        tmux send -t $TMUX_SESSION ENTER
+        tmux send -l -t $TMUX_SESSION "${COMMAND[@]}"
+        tmux send -t $TMUX_SESSION ENTER
+    fi
+}
+
+
+console_command $@

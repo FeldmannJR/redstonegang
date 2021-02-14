@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it -w /sites/shop php composer $@

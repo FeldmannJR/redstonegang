@@ -1,0 +1,218 @@
+{
+    "enabled": true,
+    "rarity": 1,
+    "biomeType": "DESERT",
+    "useDungeons": true,
+    "dungeonChance": 8,
+    "useMineShafts": true,
+    "useStrongholds": true,
+    "useVillages": true,
+    "useTemples": false,
+    "useNetherFortress": false,
+    "useCaves": true,
+    "useMonuments": false,
+    "useWoodlandMansion": false,
+    "useRavines": true,
+    "useWitchHuts": false,
+    "usePyramids": false,
+    "useJungleTemples": false,
+    "useIgloos": false,
+    "useFossils": true,
+    "useWaterLakes": false,
+    "useLavaLakes": true,
+    "useRivers": true,
+    "useNativePainting": false,
+    "useNativeStructure": false,
+    "biomeColor": "#e9c282",
+    "fossilChance": 64,
+    "lavaLakeChance": 30,
+    "waterLakeChance": 4,
+    "ores": [
+        {
+            "type": "DIRT",
+            "data": 0,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 256
+        },
+        {
+            "type": "GRAVEL",
+            "data": 0,
+            "size": 33,
+            "count": 8,
+            "minHeight": 0,
+            "maxHeight": 256
+        },
+        {
+            "type": "STONE",
+            "data": 1,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        },
+        {
+            "type": "STONE",
+            "data": 3,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        },
+        {
+            "type": "STONE",
+            "data": 5,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        }
+    ],
+    "terrainSettings": {
+        "subTerrains": [
+            {
+                "provider": "EWG",
+                "name": "Desert",
+                "xModifier": 1,
+                "yModifer": 1,
+                "zModifer": 1,
+                "yOffset": 0
+            }
+        ]
+    },
+    "overlaySettings": {
+        "spawnLillypads": false,
+        "spawnCactus": true,
+        "spawnSnowLayers": false,
+        "spawnIceOnWater": false,
+        "minRiver": 2,
+        "groundDepth": 3,
+        "surfaceDepth": 4,
+        "surfaceBlocks": [
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "SAND",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "oceanBlocks": [],
+        "groundBlocks": [
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "SANDSTONE",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "beachBlocks": [
+            [
+                [
+                    {
+                        "type": "DIRT",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "slabBlocks": [
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "STEP",
+                        "data": 1
+                    },
+                    1
+                ]
+            ]
+        ],
+        "stairBlocks": [
+            {},
+            {},
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "SANDSTONE_STAIRS",
+                        "data": 1
+                    },
+                    1
+                ]
+            ]
+        ],
+        "plantBlocks": [],
+        "riverBlocks": []
+    },
+    "customTrees": [],
+    "customStructures": [],
+    "maxEWGObjectsPerChunk": 4,
+    "xNoiseModifier": 1.2,
+    "yNoiseModifier": 0.7,
+    "zNoiseModifier": 1.2,
+    "lakeDepth": 0,
+    "baseHeight": 67,
+    "nativeBiomes": [
+        {
+            "nativeBiome": "DESERT",
+            "chance": 1
+        }
+    ],
+    "entitySettings": {},
+    "groundBlockSettings": {
+        "layers": [
+            {
+                "maxAmplitude": 10,
+                "minAmplitude": 5,
+                "xScale": 30,
+                "zScale": 30,
+                "minWidth": 4,
+                "maxWidth": 5,
+                "groundMaterials": [
+                    {
+                        "material": "DIRT",
+                        "data": 0,
+                        "chance": 1
+                    }
+                ]
+            },
+            {
+                "maxAmplitude": 10,
+                "minAmplitude": 5,
+                "xScale": 30,
+                "zScale": 30,
+                "minWidth": 13,
+                "maxWidth": 14,
+                "groundMaterials": [
+                    {
+                        "material": "COBBLESTONE",
+                        "data": 0,
+                        "chance": 1
+                    }
+                ]
+            }
+        ],
+        "repeat": true
+    },
+    "groundMaterials": []
+}

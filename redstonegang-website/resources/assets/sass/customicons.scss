@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'rg-icons';
+  src: url('../fonts/icons.eot');
+  src: url('../fonts/icons.eot') format('embedded-opentype'),
+  url('../fonts/icons.ttf') format('truetype'),
+  url('../fonts/icons.woff') format('woff'),
+  url('../fonts/icons.svg') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+[class^="rg-icon-"], [class*=" rg-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rg-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rg-icon-trophy:before {
+  content: "\e900";
+}

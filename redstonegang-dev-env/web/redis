@@ -1,0 +1,3 @@
+#!/bin/sh
+docker run -it --network redstonegang-network --rm redis:5-alpine redis-cli -h redstonegang-cache -a senha123
+

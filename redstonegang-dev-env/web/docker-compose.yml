@@ -1,0 +1,98 @@
+
+version: '3.1'
+
+services:
+
+  php:
+    container_name: php
+    build: 
+      context: ./php
+    volumes:
+      - ./sites:/sites
+    networks:
+      - redstonegang-network
+
+  app-scheduler:
+    container_name: app-scheduler
+    build: 
+      context: ./crontab
+    volumes:
+      - ./sites:/sites
+    networks:
+      - redstonegang-network
+    
+
+  app-queue:
+    container_name: app-queue
+    build: 
+      context: ./queue
+    volumes:
+      - ./sites:/sites
+    depends_on:
+      - "redis"
+    networks:
+      redstonegang-network:
+      
+  redis:
+    container_name: redstonegang-cache
+    image: "redis:5-alpine"
+    command: redis-server --requirepass senha123 --appendonly yes
+    volumes:
+      - redstonegang-cache-data:/data
+    networks:
+      redstonegang-network:
+        aliases:
+        - redstonegang-cache
+        - cache
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    stdin_open: true
+    tty: true  
+
+  mariadb:
+    container_name: redstonegang-database
+    build:
+      context: ./mariadb
+    command: --default-authentication-plugin=mysql_native_password  
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MARIADB_ROOT_PASSWORD:-senha123}"
+      MYSQL_DATABASE: "redstonegang_app"
+    networks:
+      redstonegang-network:
+        aliases:
+          - mysql-db
+          - database
+          - mariadb
+    volumes:
+      - redstonegang-mysql-data:/var/lib/mysql
+    ports:
+      - "${MARIADB_HOST_PORT:-3306}:3306"
+    
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+    ports:
+      - "${NGINX_HOST_PORT:-80}:80"
+      - "${NGINX_HOST_SSL_PORT:-443}:443"
+    networks:
+      redstonegang-network:
+        aliases:
+          - app.rg
+          - forum.rg
+          - api.app.rg
+    volumes:
+      - ./nginx/configs/:/nginx/configs/
+      - ./sites:/sites
+    depends_on:
+      - "php"
+  
+  
+volumes:
+  redstonegang-mysql-data:
+  redstonegang-cache-data:
+networks:
+  redstonegang-network:
+    external:
+      name: redstonegang-network 

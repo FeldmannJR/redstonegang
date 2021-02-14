@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "497e4b1b-db06-406c-a9ce-166ecd7652b5",
+    "name": "Feldmann",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "cb81c0cc-2b8d-3aed-9080-3a0b31b5e1a8",
+    "name": "Mahzinha",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "6b4b697e-d5f2-3f05-9d16-1019842a5688",
+    "name": "Feldmann",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

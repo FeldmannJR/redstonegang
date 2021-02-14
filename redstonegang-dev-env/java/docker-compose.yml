@@ -1,0 +1,154 @@
+
+version: '2.4'
+
+services:
+
+  network:
+    container_name: network
+    image: redstonegang-network
+    environment:
+      SERVER_NAME: "network"
+      SERVER_DEBUG: "true"
+      SERVER_DEV: "true"
+    volumes:
+      - ./jars/:/builds/jars/
+      - type: bind
+        source: ${SOURCE_DIR}
+        target: ${SOURCE_DIR}
+    networks:
+      - redstonegang-network
+    stdin_open: true
+    tty: true
+    mem_limit: 128m
+
+  bungee:
+    container_name: Bungee-1
+    image: redstonegang-bungee
+    environment:
+      SERVER_NAME: "Bungee-1"
+      SERVER_DEBUG: "true"
+      SERVER_DEV: "true"
+      SERVER_ENVIRONMENT: "local"
+      JAVA_DEBUG: "1"
+    volumes:
+      - ./jars/:/builds/jars/
+      - type: bind
+        source: ${SOURCE_DIR}
+        target: ${SOURCE_DIR}
+    networks:
+      - redstonegang-network
+    ports:
+      - 25565:25565
+      - 5001:5005
+    stdin_open: true
+    tty: true
+    mem_limit: 256m
+
+  spawn:
+    container_name: Survival-Spawn
+    image: redstonegang-survival-spawn
+    environment:
+      SERVER_NAME: "Survival-Spawn"
+      SERVER_DEBUG: "true"
+      SERVER_DEV: "true"
+      SERVER_ENVIRONMENT: "local"
+      JAVA_DEBUG: "1"
+    extra_hosts:
+      - "dynamic-bytes.com:127.0.0.1" 
+      - "api.dynamic-bytes.com:127.0.0.1" 
+    ports:
+      - 5002:5005
+    volumes:
+      - ./jars/:/builds/jars/
+      - type: bind
+        source: ${SOURCE_DIR}
+        target: ${SOURCE_DIR}
+      - survival-world:/server/worlds/survival
+      - ./data/survival/plugins/Citizens:/server/plugins/Citizens
+      - ./data/survival/plugins/EpicWorldGenerator:/server/plugins/EpicWorldGenerator
+      - ./data/survival/plugins/WorldEdit:/server/plugins/WorldEdit   
+      - ./data/survival/plugins/HolographicDisplays:/server/plugins/HolographicDisplays
+    networks:
+      - redstonegang-network
+    stdin_open: true
+    tty: true
+    mem_limit: 1536m
+
+  minerar:
+    container_name: Survival-Minerar
+    image: redstonegang-spigot
+    environment:
+      SERVER_NAME: "Survival-Minerar"
+      SERVER_DEBUG: "true"
+      SERVER_DEV: "true"
+      SERVER_USE_WORLD_EDIT: "1"
+      SERVER_ENVIRONMENT: "local"
+      SPIGOT_GAME_NAME: "SURVIVAL_MINERAR"
+      JAVA_DEBUG: "1"
+    ports:
+      - 5005:5005
+    volumes:
+      - ./jars/:/builds/jars/
+      - ./data/minerar/available-worlds/:/server/available-worlds/
+      - type: bind
+        source: ${SOURCE_DIR}
+        target: ${SOURCE_DIR}
+    networks:
+      - redstonegang-network
+    stdin_open: true
+    tty: true
+    mem_limit: 712m
+
+  Map-Config:
+    container_name: Map-Config
+    image: redstonegang-spigot
+    environment:
+      SERVER_NAME: "Map-Config"
+      SERVER_DEBUG: "true"
+      SERVER_DEV: "true"
+      SERVER_ENVIRONMENT: "local"
+      SPIGOT_GAME_NAME: "MAPCONFIG"
+      SPIGOT_USE_WORLD_EDIT: "1"
+      JAVA_DEBUG: "1"
+    ports:
+      - 5003:5005
+    volumes:
+      - ./jars/:/builds/jars/
+      - type: bind
+        source: ${SOURCE_DIR}
+        target: ${SOURCE_DIR}
+    networks:
+      - redstonegang-network
+    stdin_open: true
+    tty: true
+    mem_limit: 512m
+
+  login:
+    container_name: Login
+    image: redstonegang-spigot
+    environment:
+      SERVER_NAME: "Login"
+      SERVER_DEBUG: "true"
+      SERVER_DEV: "true"
+      SERVER_ENVIRONMENT: "local"
+      SPIGOT_GAME_NAME: "LOGIN"
+      JAVA_DEBUG: "1"
+    ports:
+      - 5011:5005
+    volumes:
+      - ./jars/:/builds/jars/
+      - type: bind
+        source: ${SOURCE_DIR}
+        target: ${SOURCE_DIR}
+    networks:
+      - redstonegang-network
+    stdin_open: true
+    tty: true
+    mem_limit: 512m
+volumes:
+  survival-world:
+
+networks:
+  redstonegang-network:
+    external:
+      name: redstonegang-network 

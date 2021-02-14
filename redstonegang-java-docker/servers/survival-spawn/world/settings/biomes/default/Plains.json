@@ -1,0 +1,655 @@
+{
+    "enabled": true,
+    "rarity": 1,
+    "biomeType": "GRASSLAND",
+    "useDungeons": true,
+    "dungeonChance": 8,
+    "useMineShafts": true,
+    "useStrongholds": true,
+    "useVillages": true,
+    "useTemples": false,
+    "useNetherFortress": false,
+    "useCaves": true,
+    "useMonuments": false,
+    "useWoodlandMansion": false,
+    "useRavines": true,
+    "useWitchHuts": false,
+    "usePyramids": false,
+    "useJungleTemples": false,
+    "useIgloos": false,
+    "useFossils": false,
+    "useWaterLakes": true,
+    "useLavaLakes": false,
+    "useRivers": true,
+    "useNativePainting": false,
+    "useNativeStructure": false,
+    "biomeColor": "#60673d",
+    "fossilChance": 64,
+    "lavaLakeChance": 70,
+    "waterLakeChance": 4,
+    "ores": [
+        {
+            "type": "DIRT",
+            "data": 0,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 256
+        },
+        {
+            "type": "GRAVEL",
+            "data": 0,
+            "size": 33,
+            "count": 8,
+            "minHeight": 0,
+            "maxHeight": 256
+        },
+        {
+            "type": "STONE",
+            "data": 1,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        },
+        {
+            "type": "STONE",
+            "data": 3,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        },
+        {
+            "type": "STONE",
+            "data": 5,
+            "size": 33,
+            "count": 10,
+            "minHeight": 0,
+            "maxHeight": 80
+        }
+    ],
+    "terrainSettings": {
+        "subTerrains": [
+            {
+                "provider": "EWG",
+                "name": "Plains",
+                "xModifier": 1,
+                "yModifer": 1,
+                "zModifer": 1,
+                "yOffset": 0
+            }
+        ]
+    },
+    "overlaySettings": {
+        "spawnLillypads": true,
+        "spawnCactus": false,
+        "spawnSnowLayers": false,
+        "spawnIceOnWater": false,
+        "minRiver": 2,
+        "groundDepth": 4,
+        "surfaceDepth": 1,
+        "surfaceBlocks": [
+            [
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 9,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 2.3,
+                                "maxInclination": 99
+                            }
+                        ]
+                    },
+                    1
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "STONE",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 1.3,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.4
+                ],
+                [
+                    {
+                        "type": "COBBLESTONE",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 1.3,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.3
+                ],
+                [
+                    {
+                        "type": "STONE",
+                        "data": 5,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 1.3,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.3
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "GRASS",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "oceanBlocks": [],
+        "groundBlocks": [
+            [
+                [
+                    {
+                        "type": "STAINED_CLAY",
+                        "data": 9,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 2.3,
+                                "maxInclination": 99
+                            }
+                        ]
+                    },
+                    1
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "STONE",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 1.3,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.4
+                ],
+                [
+                    {
+                        "type": "COBBLESTONE",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 1.3,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.3
+                ],
+                [
+                    {
+                        "type": "STONE",
+                        "data": 5,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 1.3,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.3
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "DIRT",
+                        "data": 0
+                    },
+                    0.8
+                ],
+                [
+                    {
+                        "type": "COBBLESTONE",
+                        "data": 0
+                    },
+                    0.2
+                ]
+            ]
+        ],
+        "beachBlocks": [
+            [
+                [
+                    {
+                        "type": "DIRT",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ],
+        "slabBlocks": [],
+        "stairBlocks": [],
+        "plantBlocks": [
+            {},
+            {},
+            [
+                [
+                    {
+                        "type": "SUGAR_CANE_BLOCK",
+                        "data": 0,
+                        "heightConditions": [
+                            {
+                                "minHeight": 54,
+                                "maxHeight": 54
+                            }
+                        ]
+                    },
+                    0.1
+                ],
+                [
+                    {
+                        "type": "LONG_GRASS",
+                        "data": 1,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.25
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 1,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 2,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 3,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 4,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 5,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "YELLOW_FLOWER",
+                        "data": 0,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 1,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 2,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 3,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 4,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 5,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 6,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 7,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 8,
+                        "inclinationsConditions": [
+                            {
+                                "minInclination": 0,
+                                "maxInclination": 1.7
+                            }
+                        ]
+                    },
+                    0.001
+                ]
+            ],
+            {},
+            [
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 0
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 1
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 2
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 3
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "DOUBLE_PLANT",
+                        "data": 4
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 0
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 1
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 2
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 3
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 4
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 5
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 6
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 7
+                    },
+                    0.001953125
+                ],
+                [
+                    {
+                        "type": "RED_ROSE",
+                        "data": 8
+                    },
+                    0.001953125
+                ]
+            ]
+        ],
+        "riverBlocks": [
+            [
+                [
+                    {
+                        "type": "SAND",
+                        "data": 0
+                    },
+                    1
+                ]
+            ]
+        ]
+    },
+    "customTrees": [],
+    "customStructures": [],
+    "maxEWGObjectsPerChunk": 4,
+    "xNoiseModifier": 1.2,
+    "yNoiseModifier": 0.7,
+    "zNoiseModifier": 1.2,
+    "lakeDepth": 0,
+    "baseHeight": 67,
+    "nativeBiomes": [
+        {
+            "nativeBiome": "PLAINS",
+            "chance": 0.8
+        },
+        {
+            "nativeBiome": "SAVANNA",
+            "chance": 0.2
+        }
+    ],
+    "entitySettings": {},
+    "groundBlockSettings": {
+        "layers": [
+            {
+                "maxAmplitude": 10,
+                "minAmplitude": 5,
+                "xScale": 30,
+                "zScale": 30,
+                "minWidth": 4,
+                "maxWidth": 5,
+                "groundMaterials": [
+                    {
+                        "material": "DIRT",
+                        "data": 0,
+                        "chance": 1
+                    }
+                ]
+            },
+            {
+                "maxAmplitude": 10,
+                "minAmplitude": 5,
+                "xScale": 30,
+                "zScale": 30,
+                "minWidth": 13,
+                "maxWidth": 14,
+                "groundMaterials": [
+                    {
+                        "material": "COBBLESTONE",
+                        "data": 0,
+                        "chance": 1
+                    }
+                ]
+            }
+        ],
+        "repeat": true
+    },
+    "groundMaterials": []
+}

@@ -1,0 +1,163 @@
+[
+  [
+    {
+      "id": 403,
+      "data": 0,
+      "amountMax": 1,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": [
+        "DAMAGE_ALL#3"
+      ]
+    },
+    0.05
+  ],
+  [
+    {
+      "id": 388,
+      "data": 0,
+      "amountMax": 5,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.06
+  ],
+  [
+    {
+      "id": 419,
+      "data": 0,
+      "amountMax": 1,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.05
+  ],
+  [
+    {
+      "id": 403,
+      "data": 0,
+      "amountMax": 1,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": [
+        "PROTECTION_ENVIRONMENTAL#2",
+        "DURABILITY#1"
+      ]
+    },
+    0.01
+  ],
+  [
+    {
+      "id": 264,
+      "data": 0,
+      "amountMax": 5,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.03
+  ],
+  [
+    {
+      "id": 403,
+      "data": 0,
+      "amountMax": 1,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": [
+        "LOOT_BONUS_BLOCKS#1"
+      ]
+    },
+    0.05
+  ],
+  [
+    {
+      "id": 384,
+      "data": 0,
+      "amountMax": 10,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.1
+  ],
+  [
+    {
+      "id": 331,
+      "data": 0,
+      "amountMax": 10,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.15
+  ],
+  [
+    {
+      "id": 417,
+      "data": 0,
+      "amountMax": 1,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.01
+  ],
+  [
+    {
+      "id": 289,
+      "data": 0,
+      "amountMax": 16,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.1
+  ],
+  [
+    {
+      "id": 329,
+      "data": 0,
+      "amountMax": 1,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.01
+  ],
+  [
+    {
+      "id": 322,
+      "data": 0,
+      "amountMax": 4,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.05
+  ],
+  [
+    {
+      "id": 396,
+      "data": 0,
+      "amountMax": 4,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.06
+  ],
+  [
+    {
+      "id": 341,
+      "data": 0,
+      "amountMax": 6,
+      "amountMin": 1,
+      "lore": [],
+      "enchantments": []
+    },
+    0.01
+  ]
+]

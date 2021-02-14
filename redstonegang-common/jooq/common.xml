@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.11.0.xsd">
+    <!-- Configure the database connection here -->
+    <jdbc>
+        <driver>com.mysql.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306/</url>
+        <user>root</user>
+        <password>senha123</password>
+    </jdbc>
+
+    <generator>
+        <!-- The default code generator. You can override this one, to generate your own code style.
+             Supported generators:
+             - org.jooq.codegen.JavaGenerator
+             - org.jooq.codegen.ScalaGenerator
+             Defaults to org.jooq.codegen.JavaGenerator -->
+        <name>org.jooq.codegen.JavaGenerator</name>
+
+        <database>
+            <!-- The database type. The format here is:
+                 org.util.[database].[database]Database -->
+            <name>org.jooq.meta.mysql.MySQLDatabase</name>
+
+            <!-- The database schema (or in the absence of schema support, in your RDBMS this
+                 can be the owner, user, database name) to be generated -->
+            <schemata>
+                <schema>
+                    <inputSchema>redstonegang_common</inputSchema>
+                    <outputSchemaToDefault>false</outputSchemaToDefault>
+                </schema>
+                <schema>
+                    <inputSchema>redstonegang_app</inputSchema>
+                    <outputSchemaToDefault>false</outputSchemaToDefault>
+                </schema>
+                <schema>
+                    <inputSchema>redstonegang_magento</inputSchema>
+                    <outputSchemaToDefault>false</outputSchemaToDefault>
+                </schema>
+            </schemata>
+            <inputSchema>redstonegang_common</inputSchema>
+
+            <!-- All elements that are generated from your schema
+                 (A Java regular expression. Use the pipe to separate several expressions)
+                 Watch out for case-sensitivity. Depending on your database, this might be important! -->
+            <includes>
+                groups
+                | group_options
+                | permissions
+                | permissions_desc
+                | redstonegang_common.users
+                | players
+                | moeda_logs
+                | redstonegang_common.servers
+                | accounts
+                | redstonegang_app.skins
+                | redstonegang_common.punishments
+                | redstonegang_common.punishments_reasons
+                | redstonegang_common.punishments_reasons_durations
+                | redstonegang_common.exceptions
+                | redstonegang_common.expirations
+                | redstonegang_magento.drmagento_gamecodes_code
+            </includes>
+        <forcedTypes>
+            <forcedType>
+                <name>BOOLEAN</name>
+                <expression>
+                    .*accounts\.premium
+                    | redstonegang_app\.skins\.use
+                </expression>
+            </forcedType>
+        </forcedTypes>
+        </database>
+
+        <target>
+            <!-- The destination package of your generated classes (within the destination directory) -->
+            <packageName>br.com.redstonegang.common.db.jooq</packageName>
+
+            <!-- The destination directory of your generated classes. Using Maven directory layout here -->
+            <directory>../src/main/java/</directory>
+        </target>
+    </generator>
+</configuration>
